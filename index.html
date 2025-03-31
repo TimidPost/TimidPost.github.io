@@ -1,6 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display in Dark Mode</title>
+    <style>
+        /* Basic reset for body */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background color */
+            color: #fff; /* Light text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .image-container {
+            text-align: center;
+            max-width: 90%; /* Adjust for smaller screens */
+            max-height: 80vh; /* Keep image within viewport height */
+        }
+
+        img {
+            width: 100%; /* Make the image responsive */
+            height: auto;
+            border-radius: 8px; /* Optional: Adds rounded corners */
+        }
+    </style>
+</head>
 <body>
-<img src="Kiss.png" alt="Kiss" class="inline"/>
+    <div class="image-container">
+        <img src="Kiss.png" alt="kiss">
+    </div>
 </body>
 </html>
